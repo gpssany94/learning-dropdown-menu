@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav{
+           background-color: #40868b;
+           padding: 1% ;
+           text-align: center;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+            padding: 1px 30px;
+            font-size: 17px;
+            cursor: pointer; 
+        }
+        .nav a:hover{
+            text-decoration: underline;
+        }
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+        .dropdown-content{
+            position: absolute;
+            background-color: #40868b;
+            top: 25px;
+            right: -19px;
+            text-align: center;
+            min-width: 50px;
+            display: none;
+        }
+        .dropdown-content a:hover{
+            display: block;
+            background-color: gray;
+            color: black;
+           
+        }
+        .dropdown-container:hover .dropdown-content{
+            display: block;
+        }
+       
+     
+    </style>
+</head>
+<body>
+    <div class="nav">
+
+            <a href="#"><i class="fa-solid fa-house-user"></i> Home </a>
+        
+            <a href="#"><i class="fa-brands fa-servicestack"></i>Services</a>
+        
+            <a href="#"> <i class="fa-brands fa-youtube"></i> Tutorial</a>
+       
+            <a href="#"><i class="fa-solid fa-address-card"></i> About me</a>
+
+            <div class="dropdown-container">
+                <a href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
+
+                <div class="dropdown-content">
+                    <a href="#">Facebook</a>
+                    <a href="#">Email</a>
+                    <a href="#"> 01618168567</a>
+                </div>
+
+            </div>
+        
+    </div>
+</body>
+</html>
